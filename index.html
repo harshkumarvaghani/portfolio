@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="pics/HK_logo-.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="header-text"> <p>Software Developer</p>
+                 <h1>Hi, I'm Harshkumar<br> Vaghani From Gujarat</h1></div>
+          
+        </div>
+    </div>
+</div>
+<!-------------------about---------------------->
+<div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pics/pic2-removebg-preview.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-tittle">About Me</h1>
+                    <p>Highly motivated and enthusiastic Full Stack Developer with a passion for creating innovative web solutions. Eager
+to leverage my skills in both front-end and back-end development to contribute to dynamic projects and drive
+impactful results. Committed to continuous learning and staying abreast of emerging technologies to enhance my
+proficiency and deliver cutting-edge solutions.</p>
+                        <div class="tab-tittle">
+                            <p class="tab-links active-link" onclick="opentab('skills', event)">skills</p>
+                            <p class="tab-links" onclick="opentab('Experience', event)">Experience </p>
+                            <p class="tab-links" onclick="opentab('Education', event)">Education</p>
+                        </div> 
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul><!---skills-->
+                                <li><span>UI|UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>UI|UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>UI|UX</span><br>Designing Web/App interfaces</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul><!---Experence-->
+                                <li><span>UI|UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>UI|</span><br>Designing Web/App interfaces</li>
+                                <li><span>UI|UX</span><br>Designing Web/App interfaces</li>
+                                
+                            </ul>
+                        </div><div class="tab-contents" id="Education">
+                            <ul><!---Education-->
+                                <li><span>UI|UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>|UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>UI|UX</span><br>Designing Web/App interfaces</li>
+                                
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+</div>
+<!---------------------services----------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-tittle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>desription of servicers</p>
+                <a href="#">Learn more</a>
+        </div>
+        <div>
+            <!--- add icona s wish font awnsome-->
+                <h2>UI Design</h2>
+                <p>desription of
+                    aaaaaaaaa
+                    aaaaaaaaaaaaa
+                    a servicaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaers</p>
+                <a href="#">Learn more</a>
+        </div>
+        <div>
+                <h2>App Design</h2>
+                <p>desription of servicers</p>
+                <a href="#">Learn more</a>
+        </div>
+    </div>
+</div>  
+<!--------------portfolio/work---------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-tittle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="pics/6c5b0c28c39753acf162afe17aef6555.jpg">
+                <div class="layer">
+                    <h3>Social Media APP</h3>
+                    <p>asdadadadadadadadadadadadaadaadad</p>
+                    <a href="#">link of icon\</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pics/6c5b0c28c39753acf162afe17aef6555.jpg">
+                <div class="layer">
+                    <h3>Social Media APP</h3>
+                    <p>asdadadadadadadadadadadadaadaadad</p>
+                    <a href="#">link of icon\</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pics/6c5b0c28c39753acf162afe17aef6555.jpg">
+                <div class="layer">
+                    <h3>Social Media APP</h3>
+                    <p>asdadadadadadadadadadadadaadaadad</p>
+                    <a href="#">link of icon\</a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-----------contack info  ------------->
+<div id="contact">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>vaghaniharsh4434@gmail.com</p>
+            <p>9714038235</p>
+            <div class="social-icons"></div>div
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname, event){
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+
+</body>
+</html>
